@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 55px;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+header {
+    background: #ffffff;
+    width: 100%;
+    box-shadow: 0 0 15px rgb(181, 181, 181);
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+header .logo a{
+    font-size: 22px;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .menu ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+
+}
+header .menu ul li{
+    margin: 0 15px;
+     
+}
+footer { 
+    background: #eee;
+    text-align: center;
+    padding: 8px;
+
+}
+footer a{
+    text-decoration: none;
+    color: rgba(208, 141, 6, 0.975);
+
+}
+main section{
+    height: 500px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+
+}
+main section.home {
+    background: rgb(172, 198, 220);
+}
+main section.about {
+    background: rgb(189, 189, 189);
+}
+main section.contact {
+    background: rgb(7, 123, 164);
+}
+.has-dropdown{
+    position: relative;
+}
+.has-dropdown .dropdown{
+    position: absolute;
+    top: 100%;
+    background: rgb(216, 216, 216);
+    width: 200px;
+    display: none;
+}
+.has-dropdown .dropdown a {
+    display: block;
+    padding: 7px 15px;
+    border-bottom: 1px solid rgb(197, 197, 197);
+}
+.has-dropdown:hover .dropdown{
+    display: block;
+}
